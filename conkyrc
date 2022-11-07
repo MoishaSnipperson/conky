@@ -1,0 +1,51 @@
+conky.config = {
+    alignment = 'top_right',
+    background = false,
+    border_width = 0,
+    border_inner_margin = 8,
+    cpu_avg_samples = 2,
+    default_color = '#eeeeee',
+    color1 = 'e0ffff',
+    color2 = '7affff',
+    default_outline_color = 'white',
+    default_shade_color = '#999999',
+    double_buffer = true,
+    draw_borders = false,
+    draw_graph_borders = false,
+    draw_outline = false,
+    draw_shades = false,
+    extra_newline = false,
+    font = 'DejaVu Sans Mono:size=10',
+    gap_x = 2,
+    gap_y = 2,
+    minimum_height = 2,
+    minimum_width = 2,
+    net_avg_samples = 2,
+    no_buffers = true,
+    out_to_console = false,
+    out_to_stderr = false,
+    out_to_x = true,
+    own_window = true,
+    own_window_colour = '#111111',
+    own_window_transparent = false,
+    own_window_argb_visual = true,
+    own_window_argb_value = 196,
+    own_window_class = 'Conky',
+    own_window_type = 'desktop',
+    own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+    show_graph_range = false,
+    show_graph_scale = false,
+    stippled_borders = 0,
+    update_interval = 60,
+    uppercase = false,
+    use_spacer = 'none',
+    use_xft = true,
+}
+
+conky.text = [[
+${color white}${hr 1}    
+${color white}Курсы Onliner
+${execp python3 /home/maks/coding/new_conky/onliner.py}
+${color white}${hr 1}
+
+]];
